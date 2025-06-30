@@ -1,0 +1,11 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "marionette_models"
+version = "0.1.0"
+dependencies = ["marionette", "rerun-sdk>=0.22.1, <0.23.0", "mujoco>=3.3.2, <4"]
+
+[project.license]
+text = "Apache-2.0"
