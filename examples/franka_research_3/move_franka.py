@@ -1,4 +1,4 @@
-from marionette.robots import franka_research_3
+from marionette_models import franka_research_3
 from marionette.format import RigidJoint
 import rerun as rr
 import time

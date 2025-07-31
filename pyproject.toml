@@ -4,8 +4,20 @@ build-backend = "hatchling.build"
 
 [project]
 name = "marionette_models"
+requires-python = ">=3.10, <3.13"
 version = "0.1.0"
-dependencies = ["marionette", "rerun-sdk>=0.22.1, <0.23.0", "mujoco>=3.3.2, <4"]
+dependencies = ["rerun-sdk>=0.23.0", "mujoco>=3.3.2, <4"]
 
 [project.license]
 text = "Apache-2.0"
+
+[tool.pixi.workspace]
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
+
+[tool.pixi.pypi-dependencies]
+marionette_models = { path = ".", editable = true }
+marionette = { path = "../marionette", editable = true }
+
+[tool.pixi.tasks]
+move_franka = "python3 examples/franka_research_3/move_franka.py"
