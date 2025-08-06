@@ -568,7 +568,7 @@ packages:
 - pypi: .
   name: marionette-models
   version: 0.1.0
-  sha256: 1aa3749487de198e82c958c95ab5a37dc30df4977e6bab6085a079810c527444
+  sha256: 0e32874ee63dedd9302e4027d76397d74b4d7748151d2a3f4fafc5e19f61da15
   requires_python: '>=3.10,<3.13'
   editable: true
 - conda: https://conda.anaconda.org/conda-forge/linux-64/ncurses-6.5-h2d0b736_3.conda

@@ -7,8 +7,8 @@ import rerun as rr
 
 rr.init("", spawn=True)
 
-cols = 5
-rows = 5
+cols = 3
+rows = 3
 spacing = 1.0
 for i in range(rows * cols):
     row = i // cols
