@@ -1,5 +1,5 @@
-from marion_models.franka_research_3.model import MODEL
-from marion.format import RigidJoint
+from pyppet_models.franka_research_3.model import MODEL
+from pyppet.format import RigidJoint
 import rerun as rr
 import time
 import math

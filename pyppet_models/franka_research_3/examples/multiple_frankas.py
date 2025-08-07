@@ -1,5 +1,5 @@
-from marion_models.franka_research_3.model import MODEL
-from marion.format import Pose
+from pyppet_models.franka_research_3.model import MODEL
+from pyppet.format import Pose
 import rerun as rr
 
 

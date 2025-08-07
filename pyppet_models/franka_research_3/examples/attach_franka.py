@@ -1,4 +1,4 @@
-from marion_models.franka_research_3.model import MODEL
+from pyppet_models.franka_research_3.model import MODEL
 import rerun as rr
 
 
