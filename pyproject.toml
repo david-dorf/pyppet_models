@@ -3,10 +3,10 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "marionette_models"
+name = "marion_models"
 requires-python = ">=3.10, <3.13"
 version = "0.1.0"
-dependencies = ["marionette >= 0.1.0"]
+dependencies = ["marion >= 0.1.0"]
 
 [project.license]
 text = "Apache-2.0"
@@ -16,6 +16,6 @@ channels = ["conda-forge"]
 platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
 
 [tool.pixi.tasks]
-attach_franka = "python3 marionette_models/franka_research_3/examples/attach_franka.py"
-move_franka = "python3 marionette_models/franka_research_3/examples/move_franka.py"
-multiple_frankas = "python3 marionette_models/franka_research_3/examples/multiple_frankas.py"
+attach_franka = "python3 marion_models/franka_research_3/examples/attach_franka.py"
+move_franka = "python3 marion_models/franka_research_3/examples/move_franka.py"
+multiple_frankas = "python3 marion_models/franka_research_3/examples/multiple_frankas.py"

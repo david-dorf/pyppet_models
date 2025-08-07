@@ -1,4 +1,4 @@
-from marionette.format import Link, RigidJoint, RevoluteJoint, SliderJoint, Pose, Model
+from marion.format import Link, RigidJoint, RevoluteJoint, SliderJoint, Pose, Model
 from math import pi
 import os
 
@@ -98,7 +98,7 @@ joints = [joint0, joint1, joint2, joint3, joint4, joint5, joint6, joint7, joint8
 # Model below uses a pixi project root directory, but could be adapted to any path setup
 pixi_root = os.getenv("PIXI_PROJECT_ROOT")
 if pixi_root is not None:
-    path = pixi_root + "/marionette_models/franka_research_3/"
+    path = pixi_root + "/marion_models/franka_research_3/"
 else:
     raise ValueError("PIXI_PROJECT_ROOT environment variable is not set")
 MODEL = Model(name = "franka_research_3", joints = joints, base = link0, path = path)
