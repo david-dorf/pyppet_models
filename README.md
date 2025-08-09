@@ -12,3 +12,4 @@ Example models repository for https://github.com/david-dorf/pyppet
 
 ### pip
 - `pip install pyppet-models pyppet`
+- NOTE: The path definition at the end of the Franka model relies on Pixi, but you can edit the path handling to suit your needs https://github.com/david-dorf/pyppet_models/blob/main/pyppet_models/franka_research_3/model.py
