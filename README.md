@@ -9,3 +9,6 @@ Example models repository for https://github.com/david-dorf/pyppet
 ### pixi
 - Install pixi: https://pixi.sh/latest/#installation
 - Clone this repository, `cd` into it, and run `pixi run move_franka` (or any other example in this repository)
+
+### pip
+- `pip install pyppet-models pyppet`
