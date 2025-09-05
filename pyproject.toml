@@ -18,3 +18,4 @@ platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
 
 [tool.pixi.tasks]
 visualize_franka = "python -m pyppet_models.franka_research_3.visualize_franka"
+urdf_franka = "python -m pyppet_models.franka_research_3.urdf_franka"
