@@ -17,6 +17,7 @@ mesh_7 = pf.Mesh(filename = asset_path + "link7.glb")
 mesh_hand = pf.Mesh(filename = asset_path + "hand.glb")
 mesh_finger = pf.Mesh(filename = asset_path + "finger.glb")
 
+base = pf.BaseLink()
 link0 = pf.Link(name = 'link0', visual = pf.Visual(mesh_0))
 link1 = pf.Link(name = 'link1', visual = pf.Visual(mesh_1))
 link2 = pf.Link(name = 'link2', visual = pf.Visual(mesh_2))
@@ -28,6 +29,11 @@ link7 = pf.Link(name = 'link7', visual = pf.Visual(mesh_7))
 hand = pf.Link(name = 'hand', visual = pf.Visual(mesh_hand))
 finger1 = pf.Link(name = 'finger1', visual = pf.Visual(mesh_finger))
 finger2 = pf.Link(name = 'finger2', visual = pf.Visual(mesh_finger))
+
+basejoint = pf.RigidJoint(
+    parent = base,
+    child = link0,
+)
 
 joint0 = pf.RevoluteJoint(
     parent = link0,
@@ -107,6 +113,6 @@ joint9 = pf.SliderJoint(
     limits = pf.Limits(position_range = (0, -0.04)),
 )
 
-joints = [joint0, joint1, joint2, joint3, joint4, joint5, joint6, joint7, joint8, joint9]
+joints = [basejoint, joint0, joint1, joint2, joint3, joint4, joint5, joint6, joint7, joint8, joint9]
 
-MODEL = pf.Model(name = "franka_research_3", joints = joints, base = link0)
+FRANKA_RESEARCH_3 = pf.Model(name = "franka_research_3", joints = joints)
